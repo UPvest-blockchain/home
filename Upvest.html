@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>UPvest Chain</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="UPvest Chain - революционная платформа для инвестиций в стартапы на блокчейне. Присоединяйтесь к новой эре инвестирования!" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="light">
+  <div class="sidebar-controls">
+    <button class="custom-button theme-toggle">🌞</button>
+    <label for="langSelectSidebar" style="display: none;">Выберите язык</label>
+    <select class="custom-button" id="langSelectSidebar">
+      <option value="EN">EN</option>
+      <option value="RU">RU</option>
+      <option value="TR">TR</option>
+      <option value="ES">ES</option>
+      <option value="FR">FR</option>
+      <option value="CN">CN</option>
+      <option value="KR">KR</option>
+      <option value="IN">IN</option>
+    </select>
+  </div>
+  <header>
+    <div class="logo-container">
+      <a href="/" class="logo-link">
+        <img src="logo_light.png" alt="Логотип UPvest Chain" class="logo" />
+        <h1 class="logo-text">UPvest Chain</h1>
+      </a>
+    </div>
+    <div class="header-controls">
+      <button class="custom-button theme-toggle">💡</button>
+      <label for="langSelect" style="display: none;">Выберите язык</label>
+      <select class="custom-button" id="langSelect">
+        <option value="EN">EN</option>
+        <option value="RU">RU</option>
+        <option value="TR">TR</option>
+        <option value="ES">ES</option>
+        <option value="FR">FR</option>
+        <option value="CN">CN</option>
+        <option value="KR">KR</option>
+        <option value="IN">IN</option>
+      </select>
+      <button class="wallet-button">
+        <img src="wallet_icon.png" alt="Иконка кошелька" />
+        Connect Wallet (soon)
+      </button>
+    </div>
+  </header>
+  <nav>
+    <a href="#what" class="nav-button" data-i18n="whatIsUpvest">What is UPvest</a>
+    <a href="#pass" class="nav-button" data-i18n="nftPass">NFT Pass</a>
+    <a href="#roadmap" class="nav-button" data-i18n="roadmap">Roadmap</a>
+    <a href="#tokenomics" class="nav-button" data-i18n="tokenomics">Tokenomics</a>
+    <button class="nav-button testnet-button">Testnet (Soon)</button>
+  </nav>
+  <main class="hero">
+    <p id="welcome" data-i18n="welcome">Welcome back!</p>
+    <h1 id="title" data-i18n="title">Join the new era of investing. Powered by blockchain. Top projects. Starting from $1.</h1>
+    <p id="subtitle" data-i18n="subtitle">Blockchain where anyone can become a startup investor</p>
+    <button class="button" id="explore" data-i18n="explore">Explore Passes</button>
+    <div class="arrow">↓</div>
+  </main>
+  <section class="intro">
+    <button class="button highlight-button" id="introBtn" data-i18n="intro">UPvest Intro</button>
+    <p id="introText" data-i18n="introText">UPvest Chain is revolutionizing the way people invest in startups through blockchain technology. Secure, transparent and affordable entry into innovation.</p>
+  </section>
+  <footer>
+    <p>&copy; 2025 UPvest Chain. All rights reserved.</p>
+    <p>Built on open innovation — powered by community.</p>
+  </footer>
+  <script>
+    const translations = {
+      EN: {
+        welcome: "Welcome back!",
+        title: "Join the new era of investing. Powered by blockchain. Top projects. Starting from $1.",
+        subtitle: "Blockchain where anyone can become a startup investor",
+        explore: "Explore Passes",
+        intro: "UPvest Intro",
+        introText: "UPvest Chain is revolutionizing the way people invest in startups through blockchain technology. Secure, transparent and affordable entry into innovation.",
+        whatIsUpvest: "What is UPvest",
+        nftPass: "NFT Pass",
+        roadmap: "Roadmap",
+        tokenomics: "Tokenomics"
+      },
+      RU: {
+        welcome: "С возвращением!",
+        title: "Присоединяйся к новой эре инвестиций. Благодаря блокчейну. Топовые проекты. Всего от $1.",
+        subtitle: "Блокчейн, где каждый может стать инвестором стартапов",
+        explore: "Исследовать Пасы",
+        intro: "UPvest Intro",
+        introText: "UPvest Chain меняет способ инвестирования в стартапы с помощью блокчейн-технологий. Надежный, прозрачный и доступный путь к инновациям.",
+        whatIsUpvest: "Что такое UPvest",
+        nftPass: "NFT Pass",
+        roadmap: "Дорожная карта",
+        tokenomics: "Токеномика"
+      },
+      TR: {
+        welcome: "Tekrar hoş geldiniz!",
+        title: "Yeni yatırım çağına katılın. Blockchain ile güçlendirilmiş. En iyi projeler. 1$'dan başlayan fiyatlarla.",
+        subtitle: "Herkesin startup yatırımcısı olabileceği blockchain",
+        explore: "Pasları Keşfet",
+        intro: "UPvest Tanıtım",
+        introText: "UPvest Chain, blockchain teknolojisi aracılığıyla insanların startup'lara yatırım yapma biçiminde devrim yaratıyor. Güvenli, şeffaf ve uygun fiyatlı inovasyona giriş.",
+        whatIsUpvest: "UPvest Nedir",
+        nftPass: "NFT Pasaportu",
+        roadmap: "Yol Haritası",
+        tokenomics: "Tokenomik"
+      },
+      ES: {
+        welcome: "¡Bienvenido de nuevo!",
+        title: "Únete a la nueva era de la inversión. Impulsado por blockchain. Proyectos destacados. Desde $1.",
+        subtitle: "Blockchain donde cualquiera puede convertirse en inversor de startups",
+        explore: "Explorar Pases",
+        intro: "Introducción a UPvest",
+        introText: "UPvest Chain está revolucionando la forma en que la gente invierte en startups a través de la tecnología blockchain. Entrada segura, transparente y asequible a la innovación.",
+        whatIsUpvest: "¿Qué es UPvest?",
+        nftPass: "Pase NFT",
+        roadmap: "Hoja de ruta",
+        tokenomics: "Tokenomics"
+      },
+      FR: {
+        welcome: "Bienvenue à nouveau !",
+        title: "Rejoignez la nouvelle ère de l'investissement. Propulsé par la blockchain. Projets de premier plan. À partir de 1$.",
+        subtitle: "Une blockchain où chacun peut devenir un investisseur de startup",
+        explore: "Explorer les Pass",
+        intro: "Présentation d'UPvest",
+        introText: "UPvest Chain révolutionne la façon dont les gens investissent dans les startups grâce à la technologie blockchain. Une entrée sécurisée, transparente et abordable dans l'innovation.",
+        whatIsUpvest: "Qu'est-ce qu'UPvest ?",
+        nftPass: "Pass NFT",
+        roadmap: "Feuille de route",
+        tokenomics: "Tokenomics"
+      },
+      CN: {
+        welcome: "欢迎回来！",
+        title: "加入由区块链驱动的投资新纪元。顶级项目。起价 1 美元。",
+        subtitle: "任何人都可以成为初创企业投资者的区块链",
+        explore: "探索通行证",
+        intro: "UPvest 简介",
+        introText: "UPvest Chain 正在通过区块链技术彻底改变人们投资初创企业的方式。安全、透明且经济实惠的创新入门。",
+        whatIsUpvest: "什么是 UPvest",
+        nftPass: "NFT 通行证",
+        roadmap: "路线图",
+        tokenomics: "代币经济学"
+      },
+      KR: {
+        welcome: "다시 오신 것을 환영합니다!",
+        title: "블록체인 기반의 새로운 투자 시대로 합류하세요. 최고의 프로젝트. 1달러부터 시작합니다.",
+        subtitle: "누구나 스타트업 투자자가 될 수 있는 블록체인",
+        explore: "패스 탐색",
+        intro: "UPvest 소개",
+        introText: "UPvest Chain은 블록체인 기술을 통해 사람들이 스타트업에 투자하는 방식을 혁신하고 있습니다. 안전하고 투명하며 저렴한 혁신 입문.",
+        whatIsUpvest: "UPvest란 무엇입니까?",
+        nftPass: "NFT 패스",
+        roadmap: "로드맵",
+        tokenomics: "토큰 이코노미"
+      },
+      IN: {
+        welcome: "वापसी पर स्वागत है!",
+        title: "निवेश के नए युग में शामिल हों। ब्लॉकचेन द्वारा संचालित। शीर्ष परियोजनाएँ। $1 से शुरू।",
+        subtitle: "ब्लॉकचेन जहाँ कोई भी स्टार्टअप निवेशक बन सकता है",
+        explore: "पास एक्सप्लोर करें",
+        intro: "अपवेस्ट परिचय",
+        introText: "अपवेस्ट चेन ब्लॉकचेन तकनीक के माध्यम से स्टार्टअप में लोगों के निवेश करने के तरीके में क्रांति ला रहा है। नवाचार के लिए सुरक्षित, पारदर्शी और किफायती प्रवेश।",
+        whatIsUpvest: "अपवेस्ट क्या है",
+        nftPass: "एनएफटी पास",
+        roadmap: "रोडमैप",
+        tokenomics: "टोकनोमिक्स"
+      }
+    };
+
+    const elementsToTranslate = document.querySelectorAll('[data-i18n]');
+    const langSelect = document.getElementById('langSelect');
+    const langSelectSidebar = document.getElementById('langSelectSidebar'); // Добавлено для боковой панели
+    const themeToggle = document.querySelector('.theme-toggle');
+    const body = document.body;
+
+    function setLanguage(lang) {
+      const translation = translations[lang] || translations['EN'];
+      elementsToTranslate.forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        if (translation[key]) {
+          element.textContent = translation[key];
+        }
+      });
+      localStorage.setItem('language', lang);
+    }
+
+    function toggleTheme() {
+      if (body.classList.contains('dark')) {
+        body.classList.remove('dark');
+        body.classList.add('light');
+        const logo = document.querySelector('.logo');
+        if (logo) {
+          logo.src = 'logo_light.png';
+        }
+      } else {
+        body.classList.remove('light');
+        body.classList.add('dark');
+        const logo = document.querySelector('.logo');
+        if (logo) {
+          logo.src = 'logo_dark.png';
+        }
+      }
+      localStorage.setItem('theme', body.classList.contains('dark') ? 'dark' : 'light');
+    }
+
+    if (langSelect) {
+      langSelect.addEventListener('change', (event) => {
+        setLanguage(event.target.value);
+      });
+    }
+
+    if (langSelectSidebar) { // Добавлено для боковой панели
+      langSelectSidebar.addEventListener('change', (event) => {
+        setLanguage(event.target.value);
+      });
+    }
+
+    if (themeToggle) {
+      themeToggle.addEventListener('click', toggleTheme);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const storedLang = localStorage.getItem('language');
+      const defaultLang = storedLang || 'EN';
+      if (langSelect) {
+        langSelect.value = defaultLang;
+      }
+      if (langSelectSidebar) { // Добавлено для боковой панели
+        langSelectSidebar.value = defaultLang;
+      }
+      setLanguage(defaultLang);
+
+      const storedTheme = localStorage.getItem('theme');
+      if (storedTheme === 'dark') {
+        body.classList.add('dark');
+        const logo = document.querySelector('.logo');
+        if (logo) {
+          logo.src = 'logo_dark.png';
+        }
+      } else {
+        body.classList.add('light');
+        const logo = document.querySelector('.logo');
+        if (logo) {
+          logo.src = 'logo_light.png';
+        }
+      }
+
+      if (!storedTheme) {
+        body.classList.add('light');
+        localStorage.setItem('theme', 'light');
+      }
+    });
+  </script>
+</body>
+</html>
