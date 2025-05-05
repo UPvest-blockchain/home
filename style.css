@@ -1,0 +1,283 @@
+:root {
+  --primary-color: #00eaff;
+  --dark-bg: #121212;
+  --dark-text: #f0f0f0;
+  --light-bg: #ffffff;
+  --light-text: #000000;
+  --font-family: Arial, sans-serif;
+  --transition-duration: 0.3s;
+  --border-radius-small: 10px;
+  --border-radius-medium: 15px;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  transition: background var(--transition-duration), color var(--transition-duration);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body.light {
+  background-color: var(--light-bg);
+  color: var(--light-text);
+}
+
+body.dark {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+  margin-left: auto;
+}
+
+.header-controls .custom-button.theme-toggle,
+.header-controls select {
+  display: block;
+  border: 2px solid var(--primary-color);
+  background: transparent;
+  color: inherit;
+  padding: 0.3rem 0.6rem;
+  border-radius: var(--border-radius-small);
+  font-size: 0.8rem;
+  cursor: pointer;
+  flex-shrink: 0;
+  height: auto;
+}
+
+.wallet-button {
+  background-color: var(--primary-color);
+  color: var(--light-text);
+  padding: 0.4rem 0.8rem;
+  border-radius: var(--border-radius-medium);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: none;
+  font-size: 0.7rem;
+  flex-shrink: 0;
+}
+
+.wallet-button img {
+  width: 16px;
+  height: 16px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem;
+}
+
+.nav-button {
+  padding: 0.4rem 1rem;
+  border: 1px solid var(--primary-color);
+  border-radius: var(--border-radius-small);
+  color: var(--light-text);
+  background-color: var(--primary-color);
+  font-weight: bold;
+  text-decoration: none;
+  transition: background var(--transition-duration), color var(--transition-duration);
+  max-width: 50%;
+  flex-grow: 1;
+  text-align: center;
+  margin: 0.25rem auto;
+}
+
+.nav-button:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+.nav-button.testnet-button {
+  border: 2px solid var(--primary-color);
+  background: transparent;
+  color: inherit;
+  font-weight: bold;
+}
+
+.nav-button.testnet-button:hover {
+  background-color: var(--primary-color);
+  color: var(--light-text);
+}
+
+main.hero {
+  text-align: center;
+  padding: 2rem;
+  flex-grow: 1;
+}
+
+.hero h1 {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+}
+
+.button {
+  padding: 0.6rem 1.4rem;
+  border: 1px solid var(--primary-color);
+  border-radius: var(--border-radius-medium);
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  margin: 1rem;
+  transition: background var(--transition-duration), color var(--transition-duration);
+}
+
+.button:hover {
+  background-color: var(--primary-color);
+  color: var(--light-text);
+}
+
+.highlight-button {
+  background-color: var(--primary-color);
+  color: var(--light-text);
+  border: none;
+  font-weight: bold;
+}
+
+section.intro {
+  text-align: center;
+  padding: 2rem;
+}
+
+.arrow {
+  font-size: 2rem;
+  animation: pulse 1s infinite;
+  color: var(--primary-color);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+  opacity: 0.6;
+}
+
+/* Стили для боковой панели (для мобильных устройств) */
+.sidebar-controls {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  z-index: 1000; /* Увеличил z-index, чтобы перекрыть другие элементы */
+}
+
+.sidebar-controls .custom-button,
+.sidebar-controls select {
+  border: 1px solid var(--primary-color);
+  background-color: var(--primary-color); /* Цвет как у навигации */
+  color: var(--light-text); /* Белый цвет текста */
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  font-size: 0.7rem;
+  cursor: pointer;
+  width: auto;
+  height: auto;
+  min-width: 40px; /* Минимальная ширина для кнопок */
+  text-align: center;
+  font-weight: bold; /* Полужирный текст */
+}
+
+/* Стиль конкретно для кнопки темы (солнышко) */
+.sidebar-controls .custom-button.theme-toggle {
+  font-weight: normal; /* Возвращаем обычный вес шрифта для иконки */
+  font-size: 1rem; /* Немного увеличим размер иконки */
+}
+
+/* Скрываем боковую панель на больших экранах */
+@media (min-width: 769px) {
+  .sidebar-controls {
+    display: none;
+  }
+}
+
+/* Скрываем кнопки в шапке на мобильных */
+@media (max-width: 768px) {
+  .header-controls .custom-button.theme-toggle,
+  .header-controls select {
+    display: none;
+  }
+}
+
+/* Возвращаем отображение кнопок в шапке на больших экранах */
+@media (min-width: 769px) {
+  .header-controls .custom-button.theme-toggle,
+  .header-controls select {
+    display: block;
+  }
+}
+.nft-collection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+  gap: 1.5rem;
+}
+
+.nft-card {
+  background-color: rgba(255, 255, 255, 0.05); /* Небольшая прозрачность для карточек */
+  border-radius: var(--border-radius-medium);
+  padding: 1.5rem;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nft-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: var(--border-radius-small);
+}
+
+.nft-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.nft
