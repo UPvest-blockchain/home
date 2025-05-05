@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>UPvest Chain - NFT Pass</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Узнайте больше о NFT Pass от UPvest Chain на различных блокчейнах." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="light">
+  <div class="sidebar-controls">
+    <button class="custom-button theme-toggle">🌞</button>
+    <label for="langSelectSidebar" style="display: none;">Выберите язык</label>
+    <select class="custom-button" id="langSelectSidebar">
+      <option value="EN">EN</option>
+      <option value="RU">RU</option>
+      <option value="TR">TR</option>
+      <option value="ES">ES</option>
+      <option value="FR">FR</option>
+      <option value="CN">CN</option>
+      <option value="KR">KR</option>
+      <option value="IN">IN</option>
+    </select>
+  </div>
+  <header>
+    <div class="logo-container">
+      <a href="/" class="logo-link">
+        <img src="logo_light.png" alt="Логотип UPvest Chain" class="logo" />
+        <h1 class="logo-text">UPvest Chain</h1>
+      </a>
+    </div>
+    <div class="header-controls">
+      <button class="custom-button theme-toggle">🌞</button>
+      <label for="langSelect" style="display: none;">Выберите язык</label>
+      <select class="custom-button" id="langSelect">
+        <option value="EN">EN</option>
+        <option value="RU">RU</option>
+        <option value="TR">TR</option>
+        <option value="ES">ES</option>
+        <option value="FR">FR</option>
+        <option value="CN">CN</option>
+        <option value="KR">KR</option>
+        <option value="IN">IN</option>
+      </select>
+      <button class="wallet-button">
+        <img src="wallet_icon.png" alt="Иконка кошелька" />
+        Connect Wallet (soon)
+      </button>
+    </div>
+  </header>
+  <nav>
+    <a href="/" class="nav-button" data-i18n="home">Главная</a>
+    <a href="/nft_pass.html" class="nav-button active" data-i18n="nftPass">NFT Pass</a>
+    <a href="/roadmap.html" class="nav-button" data-i18n="roadmap">Дорожная карта</a>
+    <a href="/tokenomics.html" class="nav-button" data-i18n="tokenomics">Токеномика</a>
+    <button class="nav-button testnet-button">Testnet (Soon)</button>
+  </nav>
+  <main class="hero">
+    <h1 data-i18n="nftPassPageTitle">UPvest Chain NFT Pass</h1>
+    <p data-i18n="nftPassPageSubtitle">Исследуйте наши эксклюзивные NFT Pass на различных блокчейнах. Каждый NFT дает серьезное преимущество и они суммируются!</p>
+  </main>
+  <section class="nft-collection">
+    <div class="nft-card">
+      <h3>NFT Pass на Solana</h3>
+      <img src="solana_nft.png" alt="NFT Pass Solana" width="200">
+      <p data-i18n="solanaNFTDescription">Получите высокоскоростной и масштабируемый доступ к инвестициям с NFT Pass на блокчейне Solana. Этот NFT даст вам преимущество [укажите преимущество Solana NFT].</p>
+      <a href="#" class="button highlight-button" data-i18n="viewDetails">Подробнее</a>
+    </div>
+    <div class="nft-card">
+      <h3>NFT Pass на Ton</h3>
+      <img src="ton_nft.png" alt="NFT Pass Ton" width="200">
+      <p data-i18n="tonNFTDescription">Исследуйте возможности инвестиций с NFT Pass на быстрорастущем блокчейне Ton. Владение этим NFT предоставит вам преимущество [укажите преимущество Ton NFT].</p>
+      <a href="#" class="button highlight-button" data-i18n="viewDetails">Подробнее</a>
+    </div>
+    <div class="nft-card">
+      <h3>NFT Pass на Binance Smart Chain</h3>
+      <img src="bsc_nft.png" alt="NFT Pass Binance Smart Chain" width="200">
+      <p data-i18n="bscNFTDescription">Получите доступ к инвестициям на Binance Smart Chain с нашим NFT Pass, отличающимся высокой производительностью и низкой комиссией. Этот NFT обеспечит вам преимущество [укажите преимущество BSC NFT].</p>
+      <a href="#" class="button highlight-button" data-i18n="viewDetails">Подробнее</a>
+    </div>
+    <div class="nft-card secret-nft">
+      <h3>Секретный NFT Pass</h3>
+      <img src="secret_nft.png" alt="Секретный NFT Pass" width="200" style="filter: blur(5px);">
+      <p data-i18n="secretNFTDescription">Эксклюзивный и таинственный NFT Pass на секретном блокчейне. Владение этим NFT откроет вам уникальное и беспрецедентное преимущество [укажите преимущество секретного NFT]. Детали будут раскрыты позже!</p>
+      <a href="#" class="button highlight-button" data-i18n="revealSoon">Скоро раскроем</a>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2025 UPvest Chain. All rights reserved.</p>
+    <p>Built on open innovation — powered by community.</p>
+  </footer>
+  <script>
+    const translations = {
+      EN: {
+        home: "Home",
+        nftPass: "NFT Pass",
+        roadmap: "Roadmap",
+        tokenomics: "Tokenomics",
+        nftPassPageTitle: "UPvest Chain NFT Pass",
+        nftPassPageSubtitle: "Explore our exclusive NFT Passes on various blockchains. Each NFT provides a significant advantage and they stack!",
+        viewDetails: "View Details",
+        solana: "Solana",
+        ton: "Ton",
+        binanceSmartChain: "Binance Smart Chain",
+        secretNFT: "Secret NFT",
+        solanaNFTDescription: "Get high-speed and scalable access to investments with the NFT Pass on the Solana blockchain. This NFT will give you [Solana NFT advantage].",
+        tonNFTDescription: "Explore investment opportunities with the NFT Pass on the fast-growing Ton blockchain. Owning this NFT will grant you [Ton NFT advantage].",
+        bscNFTDescription: "Gain access to investments on Binance Smart Chain with our NFT Pass, featuring high performance and low fees. This NFT will provide you with [BSC NFT advantage].",
+        secretNFTDescription: "An exclusive and mysterious NFT Pass on a secret blockchain. Owning this NFT will unlock a unique and unprecedented advantage [Secret NFT advantage]. Details will be revealed soon!",
+        revealSoon: "Reveal Soon"
+      },
+      RU: {
+        home: "Главная",
+        nftPass: "NFT Pass",
+        roadmap: "Дорожная карта",
+        tokenomics: "Токеномика",
+        nftPassPageTitle: "UPvest Chain NFT Pass",
+        nftPassPageSubtitle: "Исследуйте наши эксклюзивные NFT Pass на различных блокчейнах. Каждый NFT дает серьезное преимущество и они суммируются!",
+        viewDetails: "Подробнее",
+        solana: "Solana",
+        ton: "Ton",
+        binanceSmartChain: "Binance Smart Chain",
+        secretNFT: "Секретный NFT",
+        solanaNFTDescription: "Получите высокоскоростной и масштабируемый доступ к инвестициям с NFT Pass на блокчейне Solana. Этот NFT даст вам преимущество [укажите преимущество Solana NFT].",
+        tonNFTDescription: "Исследуйте возможности инвестиций с NFT Pass на быстрорастущем блокчейне Ton. Владение этим NFT предоставит вам преимущество [укажите преимущество Ton NFT].",
+        bscNFTDescription: "Получите доступ к инвестициям на Binance Smart Chain с нашим NFT Pass, отличающимся высокой производительностью и низкой комиссией. Этот NFT обеспечит вам преимущество [укажите преимущество BSC NFT].",
+        secretNFTDescription: "Эксклюзивный и таинственный NFT Pass на секретном блокчейне. Владение этим NFT откроет вам уникальное и беспрецедентное преимущество [укажите преимущество секретного NFT]. Детали будут раскрыты позже!",
+        revealSoon: "Скоро раскроем"
+      },
+      TR: {
+        home: "Ana Sayfa",
+        nftPass: "NFT Pass",
+        roadmap: "Yol Haritası",
+        tokenomics: "Tokenomik",
+        nftPassPageTitle: "UPvest Chain NFT Pass",
+        nftPassPageSubtitle: "Çeşitli blockchain'ler üzerindeki özel NFT Pass'lerimizi keşfedin. Her NFT önemli bir avantaj sağlar ve bunlar birikir!",
+        viewDetails: "Detayları Görüntüle",
+        solana: "Solana",
+        ton: "Ton",
+        binanceSmartChain: "Binance Smart Chain",
+        secretNFT: "Gizli NFT",
+        solanaNFTDescription: "Solana blockchain üzerindeki NFT Pass ile yüksek hızlı ve ölçeklenebilir yatırım erişimi elde edin. Bu NFT size [Solana NFT avantajı] avantajını sağlayacaktır.",
+        tonNFTDescription: "Hızla büyüyen Ton blockchain üzerindeki NFT Pass ile yatırım fırsatlarını keşfedin. Bu NFT'ye sahip olmak size [Ton NFT avantajı] avantajını sunacaktır.",
+        bscNFTDescription: "Yüksek performans ve düşük ücretler sunan Binance Smart Chain üzerindeki NFT Pass'imiz ile yatırımlara erişin. Bu NFT size [BSC NFT avantajı] avantajını sağlayacaktır.",
+        secretNFTDescription: "Gizli bir blockchain üzerinde özel ve gizemli bir NFT Pass. Bu NFT'ye sahip olmak size benzersiz ve emsalsiz bir avantaj [Gizli NFT avantajı] sağlayacaktır. Detaylar yakında açıklanacak!",
+        revealSoon: "Yakında Açıklanacak"
+      },
+      ES: {
+        home: "Inicio",
+        nftPass: "NFT Pass",
+        roadmap: "Hoja de ruta",
+        tokenomics: "Tokenomics",
+        nftPassPageTitle: "UPvest Chain NFT Pass",
+        nftPassPageSubtitle: "Explora nuestros exclusivos NFT Passes en varias blockchains. ¡Cada NFT proporciona una ventaja significativa y se acumulan!",
+        viewDetails: "Ver detalles",
+        solana: "Solana",
+        ton: "Ton",
+        binanceSmartChain: "Binance Smart Chain",
+        secretNFT: "NFT Secreto",
+        solanaNFTDescription: "Obtén acceso de alta velocidad y escalable a inversiones con el NFT Pass en la blockchain de Solana. Este NFT te dará [Ventaja del NFT de Solana].",
+        tonNFTDescription: "Explora oportunidades de inversión con el NFT Pass en la blockchain de Ton, de rápido crecimiento. Poseer este NFT te otorgará [Ventaja del NFT de Ton].",
+        bscNFTDescription: "Accede a inversiones en Binance Smart Chain con nuestro NFT Pass, que ofrece alto rendimiento y bajas comisiones. Este NFT te proporcionará [Ventaja del NFT de BSC].",
+        secretNFTDescription: "Un NFT Pass exclusivo y misterioso en una blockchain secreta. Poseer este NFT desbloqueará una ventaja única y sin precedentes [Ventaja del NFT Secreto]. ¡Los detalles se revelarán pronto!",
+        revealSoon: "Próximamente"
+      },
+      FR: {
+        home: "Accueil",
+        nftPass: "NFT Pass",
+        roadmap: "Feuille de route",
+        tokenomics: "Tokenomics",
+        nftPassPageTitle: "UPvest Chain NFT Pass",
+        nftPassPageSubtitle: "Explorez nos NFT Pass exclusifs sur diverses blockchains. Chaque NFT offre un avantage significatif et ils s'additionnent !",
+        viewDetails: "Voir les détails",
+        solana: "Solana",
+        ton: "Ton",
+        binanceSmartChain: "Binance Smart Chain",
+        secretNFT: "NFT Secret",
+        solanaNFTDescription: "Bénéficiez d'un accès rapide et évolutif aux investissements avec le NFT Pass sur la blockchain Solana. Ce NFT vous donnera [Avantage du NFT Solana].",
+        tonNFTDescription: "Explorez les opportunités d'investissement avec le NFT Pass sur la blockchain Ton en pleine croissance. La possession de ce NFT vous accordera [Avantage du NFT Ton].",
+        bscNFTDescription: "Accédez aux investissements sur Binance Smart Chain avec notre NFT Pass, offrant des performances élevées et de faibles frais. Ce NFT vous fournira [Avantage du NFT BSC].",
+        secretNFTDescription: "Un NFT Pass exclusif et mystérieux sur une blockchain secrète. La possession de ce NFT débloquera un avantage unique et sans précédent [Avantage du NFT Secret]. Les détails seront révélés prochainement !",
+        revealSoon: "Bientôt révélé"
+      },
+      CN: {
+        home: "首页",
+        nftPass: "NFT 通行证",
+        roadmap: "路线图",
+        tokenomics: "代币经济学",
+        nftPassPageTitle: "UPvest Chain NFT 通行证",
+        nftPassPageSubtitle: "探索我们在各种区块链上的独家 NFT 通行证。每个 NFT 都提供显着优势，并且可以叠加！",
+        viewDetails: "查看详情",
+        solana: "Solana",
+        ton: "Ton",
+        binanceSmartChain: "币安智能链",
+        secretNFT: "秘密 NFT",
+        solanaNFTDescription: "通过 Solana 区块链上的 NFT 通行证获得高速且可扩展的投资访问权限。此 NFT 将为您提供 [Solana NFT 优势]。",
+        tonNFTDescription: "通过快速增长的 Ton 区块链上的 NFT 通行证探索投资机会。拥有此 NFT 将为您提供 [Ton NFT 优势]。",
+        bscNFTDescription: "通过我们的 NFT 通行证访问币安智能链上的投资，该通行证具有高性能和低费用。此 NFT 将为您提供 [BSC NFT 优势]。",
+        secretNFTDescription: "秘密区块链上的独家且神秘的 NFT 通行证。拥有此 NFT 将解锁独特且前所未有的优势 [秘密 NFT 优势]。详细信息即将揭晓！",
+        revealSoon: "即将揭晓"
+      },
+      KR: {
+        home: "홈",
+        nftPass: "NFT 패스",
+        roadmap: "로드맵",
+        tokenomics: "토큰 이코노미",
+        nftPassPageTitle: "UPvest Chain NFT 패스",
+        nftPassPageSubtitle: "다양한 블록체인에서 제공되는 독점 NFT 패스를 탐색하세요. 각 NFT는 상당한 이점을 제공하며 누적됩니다!",
+        viewDetails: "세부 정보 보기",
+        solana: "솔라나",
+        ton: "톤",
+        binanceSmartChain: "바이낸스 스마트 체인",
+        secretNFT: "비밀 NFT",
+        solanaNFTDescription: "Solana 블록체인에서 NFT 패스를 통해 고속 및 확장 가능한 투자 액세스를 얻으십시오. 이 NFT는 [Solana NFT 이점]을 제공합니다.",
+        tonNFTDescription: "빠르게 성장하는 Ton 블록체인에서 NFT 패스를 통해 투자 기회를 탐색하십시오. 이 NFT를 소유하면 [Ton NFT 이점]을 얻을 수 있습니다.",
+        bscNFTDescription: "높은 성능과 저렴한 수수료를 제공하는 바이낸스 스마트 체인에서 NFT 패스를 통해 투자에 액세스하십시오. 이 NFT는 [BSC NFT 이점]을 제공합니다.",
+        secretNFTDescription: "비밀 블록체인에 있는 독점적이고 신비로운 NFT 패스입니다. 이 NFT를 소유하면 독특하고 전례 없는 이점 [비밀 NFT 이점]을 얻을 수 있습니다. 자세한 내용은 곧 공개됩니다!",
+        revealSoon: "곧 공개"
+      },
+      IN: {
+        home: "होम",
+        nftPass: "एनएफटी पास",
+        roadmap: "रोडमैप",
+        tokenomics: "टोकनोमिक्स",
+        nftPassPageTitle: "अपवेस्ट चेन एनएफटी पास",
+        nftPassPageSubtitle: "विभिन्न ब्लॉकचेन पर हमारे विशेष एनएफटी पास का अन्वेषण करें। प्रत्येक एनएफटी एक महत्वपूर्ण लाभ प्रदान करता है और वे ढेर हो जाते हैं!",
+        viewDetails: "विवरण देखें",
+        solana: "सोलाना",
+        ton: "टन",
+        binanceSmartChain: "बिनेंस स्मार्ट चेन",
+        secretNFT: "गुप्त एनएफटी",
+        solanaNFTDescription: "सोलाना ब्लॉकचेन पर एनएफटी पास के साथ उच्च गति और स्केलेबल निवेश पहुंच प्राप्त करें। यह एनएफटी आपको [सोलाना एनएफटी लाभ] देगा।",
+        tonNFTDescription: "तेजी से बढ़ते टन ब्लॉकचेन पर एनएफटी पास के साथ निवेश के अवसरों का अन्वेषण करें। इस एनएफटी के मालिक होने से आपको [टन एनएफटी लाभ] मिलेगा।",
+        bscNFTDescription: "उच्च प्रदर्शन और कम शुल्क की विशेषता वाले हमारे एनएफटी पास के साथ बिनेंस स्मार्ट चेन पर निवेश तक पहुंच प्राप्त करें। यह एनएफटी आपको [बीएससी एनएफटी लाभ] प्रदान करेगा।",
+        secretNFTDescription: "एक गुप्त ब्लॉकचेन पर एक विशेष और रहस्यमय एनएफटी पास। इस एनएफटी के मालिक होने से एक अद्वितीय और अभूतपूर्व लाभ [गुप्त एनएफटी लाभ] अनलॉक होगा। विवरण जल्द ही सामने आएगा!",
+        revealSoon: "शीघ्र ही अनावरण करें"
+      }
+    };
+
+    const elementsToTranslate = document.querySelectorAll('[data-i18n]');
+    const langSelect = document.getElementById('langSelect');
+    const langSelectSidebar = document.getElementById('langSelectSidebar');
+    const themeToggle = document.querySelectorAll('.theme-toggle'); // Теперь выбираем все кнопки переключения темы
+    const body = document.body;
+    const activeNavLink = document.querySelector('nav a[href="/nft_pass.html"]');
+
+    if (activeNavLink) {
+      activeNavLink.classList.add('active');
+    }
+
+    function setLanguage(lang) {
+      const translation = translations[lang] || translations['EN'];
+      elementsToTranslate.forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        if (translation[key]) {
+          element.textContent = translation[key];
+        }
+      });
+      localStorage.setItem('language', lang);
+    }
+
+    function toggleTheme() {
+      if (body.classList.contains('dark')) {
+        body.classList.remove('dark');
+        body.classList.add('light');
+        const logo = document.querySelector('.logo');
+        if (logo) {
+          logo.src = 'logo_light.png';
+        }
+      } else {
+        body.classList.remove('light');
+        body.classList.add('dark');
+        const logo = document.querySelector('.logo');
+        if (logo) {
+          logo.src = 'logo_dark.png';
+        }
+      }
+      localStorage.setItem('theme', body.classList.contains('dark') ? 'dark' : 'light');
+    }
+
+    if (langSelect) {
+      langSelect.addEventListener('change', (event) => {
+        setLanguage(event.target.value);
+      });
+    }
+
+    if (langSelectSidebar) {
+      langSelectSidebar.addEventListener('change', (event) => {
+        setLanguage(event.target.value);
+      });
+    }
+
+    themeToggle.forEach(button => { // Добавляем обработчик для каждой кнопки
+      button.addEventListener('click', toggleTheme);
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const storedLang = localStorage.getItem('language');
+      const defaultLang = storedLang || 'EN';
+      if (langSelect) {
+        langSelect.value = defaultLang;
+      }
+      if (langSelectSidebar) {
+        langSelectSidebar.value = defaultLang;
+      }
+      setLanguage(defaultLang);
+
+      const storedTheme = localStorage.getItem('theme');
+      if (storedTheme === 'dark') {
+        body.classList.add('dark');
+        const logo = document.querySelector('.logo');
+        if (logo) {
+          logo.src = 'logo_dark.png';
+        }
+      } else {
+        body.classList.add('light');
+        const logo = document.querySelector('.logo');
+        if (logo) {
+          logo.src = 'logo_light.png';
+        }
+      }
+
+      if (!storedTheme) {
+        body.classList.add('light');
+        localStorage.setItem('theme', 'light');
+      }
+    });
+  </script>
+</body>
+</html>
